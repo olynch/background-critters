@@ -57,5 +57,7 @@
   (define bg (scene state))
   (save-image bg "/home/o/.background-image")
   (system "feh --bg-scale ~/.background-image")
-  (sleep 600)
+  (sleep 2)
   (run-background (adjust state)))
+
+(run-background start-state)
